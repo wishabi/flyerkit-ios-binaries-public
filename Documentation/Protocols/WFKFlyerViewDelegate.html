@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WFKFlyerViewDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/WFKFlyerViewDelegate" class="dashAnchor"></a>
+    <a title="WFKFlyerViewDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">FlyerKit Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">FlyerKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        WFKFlyerViewDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/WFKFlyerView.html">WFKFlyerView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/WFKFlyerViewBadgeAnnotation.html">WFKFlyerViewBadgeAnnotation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WFKFlyerViewDelegate.html">WFKFlyerViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WFKFlyerViewTapAnnotation.html">WFKFlyerViewTapAnnotation</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>WFKFlyerViewDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">WFKFlyerViewDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Protocol definition for a callback handler to be invoked on flyer events.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)WFKFlyerViewDelegate(im)flyerView:gotSingleTap:atPoint:"></a>
+                    <a name="//apple_ref/objc/Method/-flyerView:gotSingleTap:atPoint:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)WFKFlyerViewDelegate(im)flyerView:gotSingleTap:atPoint:">-flyerView:gotSingleTap:atPoint:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an annotation in a flyer view&rsquo;s tapAnnotations is single
+ tapped.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">flyerView</span><span class="p">:(</span><span class="n"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">flyerView</span>
+     <span class="nf">gotSingleTap</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/WFKFlyerViewTapAnnotation.html">WFKFlyerViewTapAnnotation</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">annotation</span>
+          <span class="nf">atPoint</span><span class="p">:(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">point</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">flyerView</span><span class="p">(</span><span class="n">_</span> <span class="nv">flyerView</span><span class="p">:</span> <span class="kt"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span><span class="p">,</span> <span class="n">gotSingleTap</span> <span class="nv">annotation</span><span class="p">:</span> <span class="kt"><a href="../Protocols/WFKFlyerViewTapAnnotation.html">WFKFlyerViewTapAnnotation</a></span><span class="p">?,</span> <span class="n">at</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flyerView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view that was single tapped.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>annotation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The tap annotation that was single tapped.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>point</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The flyer coordinate of the single tap.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)WFKFlyerViewDelegate(im)flyerView:gotDoubleTap:atPoint:"></a>
+                    <a name="//apple_ref/objc/Method/-flyerView:gotDoubleTap:atPoint:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)WFKFlyerViewDelegate(im)flyerView:gotDoubleTap:atPoint:">-flyerView:gotDoubleTap:atPoint:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an annotation in a flyer view&rsquo;s tapAnnotations is double
+ tapped.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">flyerView</span><span class="p">:(</span><span class="n"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">flyerView</span>
+     <span class="nf">gotDoubleTap</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/WFKFlyerViewTapAnnotation.html">WFKFlyerViewTapAnnotation</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">annotation</span>
+          <span class="nf">atPoint</span><span class="p">:(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">point</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">flyerView</span><span class="p">(</span><span class="n">_</span> <span class="nv">flyerView</span><span class="p">:</span> <span class="kt"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span><span class="p">,</span> <span class="n">gotDoubleTap</span> <span class="nv">annotation</span><span class="p">:</span> <span class="kt"><a href="../Protocols/WFKFlyerViewTapAnnotation.html">WFKFlyerViewTapAnnotation</a></span><span class="p">?,</span> <span class="n">at</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flyerView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view that was double tapped.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>annotation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The tap annotation that was double tapped.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>point</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The flyer coordinate of the double tap.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)WFKFlyerViewDelegate(im)flyerView:gotLongPress:atPoint:"></a>
+                    <a name="//apple_ref/objc/Method/-flyerView:gotLongPress:atPoint:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)WFKFlyerViewDelegate(im)flyerView:gotLongPress:atPoint:">-flyerView:gotLongPress:atPoint:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an annotation in a flyer view&rsquo;s tapAnnotations is long
+ pressed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">flyerView</span><span class="p">:(</span><span class="n"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">flyerView</span>
+     <span class="nf">gotLongPress</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/WFKFlyerViewTapAnnotation.html">WFKFlyerViewTapAnnotation</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">annotation</span>
+          <span class="nf">atPoint</span><span class="p">:(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">point</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">flyerView</span><span class="p">(</span><span class="n">_</span> <span class="nv">flyerView</span><span class="p">:</span> <span class="kt"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span><span class="p">,</span> <span class="n">gotLongPress</span> <span class="nv">annotation</span><span class="p">:</span> <span class="kt"><a href="../Protocols/WFKFlyerViewTapAnnotation.html">WFKFlyerViewTapAnnotation</a></span><span class="p">?,</span> <span class="n">at</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flyerView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view that was long pressed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>annotation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The tap annotation that was long pressed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>point</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The flyer coordinate of the long press.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)WFKFlyerViewDelegate(im)flyerViewDidScroll:"></a>
+                    <a name="//apple_ref/objc/Method/-flyerViewDidScroll:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)WFKFlyerViewDelegate(im)flyerViewDidScroll:">-flyerViewDidScroll:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the flyer view&rsquo;s visible rectangle has changed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">flyerViewDidScroll</span><span class="p">:(</span><span class="n"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">flyerView</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">flyerViewDidScroll</span><span class="p">(</span><span class="n">_</span> <span class="nv">flyerView</span><span class="p">:</span> <span class="kt"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flyerView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view that scrolled.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)WFKFlyerViewDelegate(im)flyerViewWillBeginLoading:"></a>
+                    <a name="//apple_ref/objc/Method/-flyerViewWillBeginLoading:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)WFKFlyerViewDelegate(im)flyerViewWillBeginLoading:">-flyerViewWillBeginLoading:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the flyer view successfully loads the flyer id set by
+ setFlyerId:.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">flyerViewWillBeginLoading</span><span class="p">:(</span><span class="n"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">flyerView</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">flyerViewWillBeginLoading</span><span class="p">(</span><span class="n">_</span> <span class="nv">flyerView</span><span class="p">:</span> <span class="kt"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flyerView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view that began loading.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)WFKFlyerViewDelegate(im)flyerViewDidFinishLoading:"></a>
+                    <a name="//apple_ref/objc/Method/-flyerViewDidFinishLoading:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)WFKFlyerViewDelegate(im)flyerViewDidFinishLoading:">-flyerViewDidFinishLoading:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the flyer view successfully loads the flyer id set by 
+ setFlyerId:.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">flyerViewDidFinishLoading</span><span class="p">:(</span><span class="n"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">flyerView</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">flyerViewDidFinishLoading</span><span class="p">(</span><span class="n">_</span> <span class="nv">flyerView</span><span class="p">:</span> <span class="kt"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flyerView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view that successfully finished loading.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)WFKFlyerViewDelegate(im)flyerViewDidFailLoading:withError:"></a>
+                    <a name="//apple_ref/objc/Method/-flyerViewDidFailLoading:withError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)WFKFlyerViewDelegate(im)flyerViewDidFailLoading:withError:">-flyerViewDidFailLoading:withError:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the flyer view fails to load the flyer id set by setFlyerId:.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">flyerViewDidFailLoading</span><span class="p">:(</span><span class="n"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">flyerView</span>
+                      <span class="nf">withError</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">flyerViewDidFailLoading</span><span class="p">(</span><span class="n">_</span> <span class="nv">flyerView</span><span class="p">:</span> <span class="kt"><a href="../Classes/WFKFlyerView.html">WFKFlyerView</a></span><span class="p">,</span> <span class="n">withError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flyerView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view that failed to load.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error that occurred while loading, or nil.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2016 Flipp, Inc. All Rights Reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
